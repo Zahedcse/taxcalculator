@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyAppBar extends StatelessWidget with PreferredSizeWidget {
   const MyAppBar({Key? key}) : super(key: key);
@@ -27,7 +28,24 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
           'Asset/Images/bdlogo.png',
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Exit App?'),
+                    content: Text('Are you sure you want to exit?'),
+                    actions: [
+                      MaterialButton(
+                        child: Text('Yes'),
+                        onPressed: () {
+                          SystemNavigator.pop();
+                        },
+                      )
+                    ],
+                  );
+                });
+          },
           icon: Icon(
             Icons.more_vert,
             color: Colors.black,

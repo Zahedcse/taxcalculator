@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       //backgroundColor: Color(0xfff83beb8),
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
       appBar: MyAppBar(),
       body: HomeWidget(),
     );

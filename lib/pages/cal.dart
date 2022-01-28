@@ -59,6 +59,7 @@ class _CalculatorState extends State<Calculator> {
         ],
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
+        selectedItemColor: Color(0xFFFBB034),
       ),
     );
   }
