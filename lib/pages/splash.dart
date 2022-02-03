@@ -60,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Text(
                         'Welcome To Tax Calculator',
                         style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 29,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),

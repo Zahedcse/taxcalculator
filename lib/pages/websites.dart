@@ -14,6 +14,7 @@ class Websites extends StatefulWidget {
 class _WebsitesState extends State<Websites> {
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
           title: const Text(
@@ -28,7 +29,7 @@ class _WebsitesState extends State<Websites> {
         body: ListView(
           children: [
             SizedBox(
-              height: 10,
+              height: screenSize.height * 0.02,
             ),
             Card(
               shape: RoundedRectangleBorder(
@@ -38,7 +39,7 @@ class _WebsitesState extends State<Websites> {
               color: Colors.deepOrange,
               child: Container(
                 margin: EdgeInsets.all(10),
-                height: 120,
+                height: screenSize.height * 0.2,
                 child: Column(
                   children: [
                     Text(
@@ -71,7 +72,7 @@ class _WebsitesState extends State<Websites> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: screenSize.height * 0.01,
             ),
             Card(
               shape: RoundedRectangleBorder(
@@ -81,7 +82,7 @@ class _WebsitesState extends State<Websites> {
               color: Colors.deepOrange,
               child: Container(
                 margin: EdgeInsets.all(10),
-                height: 100,
+                height: screenSize.height * 0.2,
                 child: Column(
                   children: [
                     Text(
@@ -114,7 +115,7 @@ class _WebsitesState extends State<Websites> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: screenSize.height * 0.01,
             ),
             Card(
               shape: RoundedRectangleBorder(
@@ -124,7 +125,7 @@ class _WebsitesState extends State<Websites> {
               color: Colors.deepOrange,
               child: Container(
                 margin: EdgeInsets.all(10),
-                height: 100,
+                height: screenSize.height * 0.15,
                 child: Column(
                   children: [
                     Text(
@@ -157,7 +158,7 @@ class _WebsitesState extends State<Websites> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: screenSize.height * 0.01,
             ),
             Card(
               shape: RoundedRectangleBorder(
@@ -167,7 +168,7 @@ class _WebsitesState extends State<Websites> {
               color: Colors.deepOrange,
               child: Container(
                 margin: EdgeInsets.all(10),
-                height: 100,
+                height: screenSize.height * 0.175,
                 child: Column(
                   children: [
                     Text(

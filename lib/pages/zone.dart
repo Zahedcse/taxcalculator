@@ -11,7 +11,7 @@ class Zones extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'গুরুত্বপূর্ণ অঞ্চলগুলোর টেলিফোন',
+          'গুরুত্বপূর্ণ অঞ্চলগুলোর কোড',
           style: TextStyle(
             fontFamily: GoogleFonts.hindSiliguri().fontFamily,
             fontSize: 20,

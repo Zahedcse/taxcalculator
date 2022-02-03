@@ -21,7 +21,7 @@ class _MyProfileState extends State<MyProfile> {
           children: [
             Container(
               color: Colors.black,
-              height: screenSize.height * 0.90,
+              height: screenSize.height,
               //width: screenSize.width * 0.9,
               //decoration: const BoxDecoration(),
               child: Column(

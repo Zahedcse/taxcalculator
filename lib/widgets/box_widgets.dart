@@ -64,7 +64,7 @@ class _BoxWidgetState extends State<BoxWidget> {
           ],
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.05,
+          height: MediaQuery.of(context).size.height * 0.03,
         ),
         MyForm(),
       ],
